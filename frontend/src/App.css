@@ -1,0 +1,175 @@
+/* Filename: App.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f3f4f6;
+  color: #1f2937;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  max-width: 700px;
+  width: 100%;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  margin: 1rem;
+}
+
+header {
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+header h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+header p {
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
+
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+  box-sizing: border-box; /* Important for padding and width */
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+}
+
+.button-group {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+button {
+  flex-grow: 1;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+button:disabled {
+  background-color: #d1d5db;
+  cursor: not-allowed;
+}
+
+button:not(:disabled):hover {
+  transform: translateY(-2px);
+}
+
+button:first-of-type {
+  background-color: #3b82f6;
+  color: white;
+}
+button:first-of-type:hover:not(:disabled) {
+  background-color: #2563eb;
+}
+
+.clear-btn {
+  background-color: #e5e7eb;
+  color: #4b5563;
+}
+.clear-btn:hover:not(:disabled) {
+  background-color: #d1d5db;
+}
+
+.passage-buttons {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+.passage-buttons p {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+.passage-buttons button {
+  background-color: #f9fafb;
+  color: #374151;
+  border: 1px solid #d1d5db;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem;
+  font-size: 0.875rem;
+}
+.passage-buttons button:hover {
+  background-color: #f3f4f6;
+}
+
+.results-section {
+  margin-top: 2rem;
+}
+
+.error-message {
+  color: #ef4444;
+  background-color: #fee2e2;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.chart h3 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.emotion-bar-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.emotion-label {
+  width: 90px;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.emotion-bar {
+  flex-grow: 1;
+  background-color: #e5e7eb;
+  border-radius: 9999px;
+  height: 24px;
+}
+
+.emotion-score {
+  height: 100%;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 0.5rem;
+  color: #1f2937;
+  font-size: 0.75rem;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: width 0.5s ease-in-out;
+}
